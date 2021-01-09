@@ -8,7 +8,7 @@ def create_folder_from_path():
         os.makedirs(path)
         #path.mkdir(parents=True, exist_ok=False)
     except FileExistsError:
-        print("Folder is already there")
+        pass
     else:
         print("Folder was created")
     return path
